@@ -52,7 +52,11 @@ body {
 
 a {
 	text-decoration: none;
-	color: var(--clr-black);
+}
+
+p {
+	font-size: 1.6rem;
+	line-height: 1.8rem;
 }
 
 /**********************************/
@@ -185,6 +189,60 @@ a {
 	height: 100%;
 	object-fit: cover;
 	z-index: -1;
+}
+
+.hero-texto {
+	min-width: 37rem;
+	padding: 1.6rem;
+}
+
+.hero-texto__titulo {
+	font-size: 5.2rem;
+	font-weight: 900;
+	color: var(--clr-white);
+	text-transform: uppercase;
+}
+
+.hero-texto__descricao {
+	font-size: 2.4rem;
+	font-weight: 600;
+	color: var(--clr-white);
+	max-width: 57rem;
+	margin: 1rem 0;
+}
+
+.hero-texto__cta {
+	display: block;
+	font-size: 3.6rem;
+	font-weight: 600;
+	color: var(--clr-white);
+	width: 27rem;
+	text-align: center;
+	background: var(--clr-black);
+	padding: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	transition: var(--transition);
+}
+
+.hero-texto__cta:hover {
+	letter-spacing: .6rem;
+}
+
+@media screen and (min-width: 992px) {
+	.hero-texto__titulo {
+		font-size: 7.2rem;
+	}
+
+	.hero-texto__titulo--linha2 {
+		font-size: 6.4rem;
+	}
+}
+
+@media screen and (min-width: 1170px) {
+	.hero-texto {
+		padding: 1.6rem calc((100% - 117rem - 1.6rem) / 2);
+	}
 }
 
 /**********************************/
