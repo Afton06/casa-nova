@@ -56,7 +56,48 @@ a {
 
 p {
 	font-size: 1.6rem;
-	line-height: 1.8rem;
+	line-height: 1.8;
+}
+
+section {
+	min-width: 37rem;
+	padding: 1.6rem;
+}
+
+section:nth-child(odd){
+	background: var(--clr-light-green);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.section__titulo {
+	font-size: 4.8rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	padding-top: 1.6rem;
+	padding-bottom: 1.6rem;
+	text-align: center;
+}
+
+.section__titulo--destaque {
+	color: var(--clr-medium-green);
+}
+
+@media screen and (min-width: 625px) {
+	section:nth-child(odd) {
+		padding-top: 5.6rem;
+		padding-bottom: 5.6rem;
+	}
+	
+}
+
+@media screen and (min-width: 1170px) {
+	section {
+		padding: 1.6rem calc((100% - 117rem - 1.6rem) / 2);
+	}
 }
 
 /**********************************/
@@ -229,7 +270,7 @@ p {
 	letter-spacing: .6rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 960px) {
 	.hero-texto__titulo {
 		font-size: 7.2rem;
 	}
@@ -249,14 +290,104 @@ p {
 /* 4. Sobre Nós
 /**********************************/
 
+.sobre-texto {
+	margin-top: 1.6rem;
+}
 
+.sobre-texto__titulo {
+	font-size: 2.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: .8rem;
+}
+
+@media screen and (min-width: 768px) {
+	.sobre-c {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.sobre-texto {
+		flex: 6 1 1rem;
+		margin-right: 1.5rem;
+	}
+
+	.sobre-c__img {
+		flex: 1 1 1rem;
+		max-width: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.sobre {
+		height: 100vh;
+	}
+
+	.sobre-c {
+		max-width: 117rem;
+		margin: 0 auto;
+	}
+	
+}
 
 /**********************************/
 /* 5. Diferenciais
 /**********************************/
 
+.direfenciais {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 
+.direfencial + .direfencial{
+	margin-top: 1.6rem;
+}
 
+.direfencial__titulo {
+	font-size: 2.4rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+}
+
+.direfencial__descricao {
+	width: 28.8rem;
+}
+
+.direfencial__titulo::before {
+	content: "";
+	background: var(--clr-black);
+	color: var(--clr-white);
+	padding: 1rem;
+	margin-right: .8rem;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-size: 3.6rem;
+}
+
+.direfencial__titulo--carteira::before {
+	content: "\f555";
+}
+
+.direfencial__titulo--mapa::before {
+	content: "\f5a0";
+}
+
+.direfencial__titulo--meias::before {
+	content: "\f696";
+}
+
+@media screen and (min-width: 625px) {
+	.direfenciais {
+		justify-content: space-between;
+	}
+	.direfencial + .direfencial {
+		margin-top: 0;
+	}
+}
 /**********************************/
 /* 6. Pacotes 
 /**********************************/
