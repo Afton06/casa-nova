@@ -246,16 +246,15 @@ sobre.jpg {
 	position: relative;
 	min-height: 100vh;
 	display: flex;
-	align-items: end;
+	align-items: center;
 }
 
 .hero_img {
-	margin: 10px;
-	position: relative;
-	width: 90%;
-	height: 0%;
+	margin-top: 0; /* Remove qualquer margem no topo */
+	margin-bottom: 0;
+	width: 45%; /* Define um tamanho proporcional */
+	height: auto;
 	object-fit: cover;
-	z-index: -1;
 }
 
 .hero-texto {
@@ -437,7 +436,11 @@ sobre.jpg {
 /* 9. Footer
 /**********************************/
 
+.footer {
 
+	padding: 1.6rem;
+	text-align: center;
+}
 
 /**********************************/
 /* 10. Modal
