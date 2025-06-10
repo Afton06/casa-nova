@@ -18,6 +18,8 @@
 
 	<link rel="icon" type="image/png" href="ativos/logo-icon.png">
 	<link rel="stylesheet" href="css/styles.css">
+
+	<i class="fa-regular fa-circle-user"></i>
 </head>
 <body>
 	<header id="home">
@@ -31,7 +33,7 @@
 
 			<ul class="navbar-list">
 				<li>
-					<a href="index.html" class="navbar-list__link">Home</a>
+					<a href="index.php" class="navbar-list__link">Home</a>
 				</li>
 				<li>
 					<a href="sobre-nos.html" class="navbar-list__link">Sobre Nós</a>
@@ -64,7 +66,7 @@
 		</nav> <!-- navbar -->
 
 		<div class="hero">
-			<img src="ativos/persona-main.jpg" alt="Persona" class="hero_img"></img>
+			<img src="ativos/walpp.avif" alt="Persona" class="hero_img"></img>
 			<div class="hero-texto">
 				<h1 class="hero-texto__titulo">Realizando o seu sonho do jeitinho que você deseja</h1>
 				<p class="hero-texto__descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi vero nihil quaerat reiciendis, velit recusandae!</p>
@@ -73,9 +75,49 @@
 		</div> <!-- hero -->
 	</header> <!-- home -->
 
-<footer class="footer">
-    <p>© 2025 - Todos os direitos reservados</p>
-</footer>
+	<section id="sobre" class="sobre">
+		<h2 class="section__titulo">Sobre <span class="section__titulo--destaque">nós</span></h2>
+		<div class="sobre-c">
+			<img src="ativos/persona-main.jpg" alt="Sobre Nós" class="sobre-c__img">
+			<div class="sobre-texto">
+				<h3 class="sobre-texto__titulo">Uma nova maneira de realizar seus sonhos</h3>
+				<p>Mussum Ipsum, cacilds vidis litro abertis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu
+					levo! A
+					ordem dos tratores não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est. Praesent
+					malesuada
+					urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.</p>
+				<br>
+				<p>Si num tem leite então bota uma pinga aí cumpadi! Diuretics paradis num copo é motivis de denguis. Interagi no
+					mé,
+					cursus quis, vehicula ac nisi. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+			</div>
+		</div> <!-- sobre-c -->
+	</section>
+
+	<section class="diferenciais" >
+		<h2 class="difer__titulo">Nossos <span class="difer__titulo--destaque">diferenciais</span></h2>
+		<div class="diferenciais">
+			<article class="diferencial">
+				<h3 class="diferencial__titulo diferencial__titulo--carteira">O melhor preço</h3>
+				<p class="diferencial__descricao">Mussum Ipsum, cacilds vidis litro abertis. Todo mundo vê os porris que eu
+					tomo, mas ninguém vê os tombis que eu levo!</p>
+			</article>
+			
+			<article class="diferencial">
+				<h3 class="diferencial__titulo diferencial__titulo--mapa">Alta qualidade</h3>
+				<p class="diferencial__descricao">Mussum Ipsum, cacilds vidis litro abertis. Todo mundo vê os porris que eu
+					tomo,
+					mas ninguém vê os tombis que eu levo!</p>
+			</article>
+			
+			<article class="diferencial">
+				<h3 class="diferencial__titulo diferencial__titulo--meias">Atendimento todos os dias</h3>
+				<p class="diferencial__descricao">Mussum Ipsum, cacilds vidis litro abertis. Todo mundo vê os porris que eu
+					tomo,
+					mas ninguém vê os tombis que eu levo!</p>
+			</article> <!-- diferencial -->
+		</div> <!-- diferenciais -->
+	</section>
 	<script src="js/scripts.js"></script>
 </body>
-</html>3
+</html>

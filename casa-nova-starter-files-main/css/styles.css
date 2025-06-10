@@ -66,7 +66,7 @@ section {
 }
 
 section:nth-child(odd){
-	background: var(--clr-black);
+	background: var(--clr-background);
 }
 
 logo.png {
@@ -79,6 +79,14 @@ img {
 	height: auto;
 }
 
+.difer__titulo {
+	font-size: 2.4rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: black;
+	margin-bottom: 1.6rem;
+}
+
 .section__titulo {
 	color: var(--clr-white);
 	font-size: 4.8rem;
@@ -89,16 +97,11 @@ img {
 	text-align: center;
 }
 
-sobre.jpg {
-	width: 10%;
-	height: 10%;
-}
-
 .section__titulo--destaque {
 	color: var(--clr-black);
 }
 
-@media screen and (min-width: 625px) {
+@media screen and (min-width: 992px) {
 	section:nth-child(odd) {
 		padding-top: 5.6rem;
 		padding-bottom: 5.6rem;
@@ -139,14 +142,12 @@ sobre.jpg {
 }
 
 .navbar-header__toggle {
-	float: left;
 	width: 4.8rem;
 	height: 4.8rem;
 	display: transparent;
 	border: transparent;
 	font-size: 3.2rem;
 	color: var(--clr-black);
-	cursor: pointer;
 	transition: var(--transition);
 }
 
@@ -250,11 +251,11 @@ sobre.jpg {
 }
 
 .hero_img {
-	margin-top: 0; /* Remove qualquer margem no topo */
-	margin-bottom: 0;
-	width: 45%; /* Define um tamanho proporcional */
-	height: auto;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
+	z-index: -1; /* Coloca a imagem atrás do texto */
 }
 
 .hero-texto {
@@ -327,6 +328,7 @@ sobre.jpg {
 	margin-bottom: .8rem;
 }
 
+
 @media screen and (min-width: 768px) {
 	.sobre-c {
 		display: flex;
@@ -336,11 +338,11 @@ sobre.jpg {
 
 	.sobre-texto {
 		flex: 6 1 1rem;
-		margin-right: 1.5rem;
+		margin-left: 1.5rem;
 	}
 
 	.sobre-c__img {
-		flex:  1 rem;
+		flex: 1 1 1rem;
 		max-width: 1.5rem;
 	}
 }
@@ -349,23 +351,19 @@ sobre.jpg {
 	.sobre {
 		height: 100vh;
 	}
-
-	.sobre-c {
-		max-width: 117rem;
-		margin: 0 auto;
-	}
-	
 }
 
 /**********************************/
 /* 5. Diferenciais
 /**********************************/
 
-.direfenciais {
+.diferenciais {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	background-color: var(--clr-black);
 }
+
 
 .direfencial + .direfencial{
 	margin-top: 1.6rem;
