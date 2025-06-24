@@ -79,6 +79,7 @@ img {
 }
 
 .section__titulo {
+    color: var(--clr-white);
 	font-size: 4.8rem;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -110,6 +111,7 @@ img {
 /**********************************/
 
 .navbar {
+    top: 0;
 	position: fixed;
 	background: var(--clr-background);
 	width: 100%;
@@ -221,205 +223,11 @@ img {
 }
 
 /**********************************/
-/* 3. Hero
-/**********************************/
-
-.hero {
-	position: relative;
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-}
-
-.hero_img {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	z-index: -1; /* Coloca a imagem atrás do texto */
-}
-
-.hero-texto {
-	min-width: 37rem;
-	padding: 1.6rem;
-}
-
-.hero-texto__titulo {
-	font-size: 5.2rem;
-	font-weight: 900;
-	color: var(--clr-white);
-	text-transform: uppercase;
-}
-
-.hero-texto__descricao {
-	font-size: 2.4rem;
-	font-weight: 600;
-	color: var(--clr-white);
-	max-width: 57rem;
-	margin: 1rem 0;
-}
-
-.hero-texto__cta {
-	display: block;
-	font-size: 3.6rem;
-	font-weight: 600;
-	color: var(--clr-white);
-	width: 27rem;
-	text-align: center;
-	background: var(--clr-gold);
-	padding: 1.6rem;
-	text-transform: uppercase;
-	letter-spacing: .2rem;
-	transition: var(--transition);
-}
-
-.hero-texto__cta:hover {
-	letter-spacing: .6rem;
-}
-
-@media screen and (min-width: 960px) {
-	.hero-texto__titulo {
-		font-size: 7.2rem;
-	}
-
-	.hero-texto__titulo--linha2 {
-		font-size: 6.4rem;
-	}
-}
-
-@media screen and (min-width: 1170px) {
-	.hero-texto {
-		padding: 1.6rem calc((100% - 117rem - 1.6rem) / 2);
-	}
-}
-
-/**********************************/
-/* 4. Sobre Nós
-/**********************************/
-
-.section__titulo {
-	color: var(--clr-white);
-}
-.sobre-texto {
-	margin-top: 1.6rem;
-}
-
-.sobre-texto__titulo {
-	color: var(--clr-gold);
-	font-size: 2.8rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	margin-bottom: .8rem;
-}
-
-@media screen and (min-width: 768px) {
-	.sobre-c {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-	}
-
-	.sobre-texto {
-		flex: 6 1 1rem;
-		margin-left: 1.5rem;
-	}
-
-	.sobre-c__img {
-		flex: 1 1 1rem;
-		margin-right: 1.5rem;
-	}
-}
-
-@media screen and (min-width: 960px) {
-	.sobre {
-		height: 100vh;
-	}
-}
-
-/**********************************/
-/* 5. Diferenciais
-/**********************************/
-
-.section__titulo__diferencial {
-	font-size: 4.8rem;
-	font-weight: 900;
-	text-transform: uppercase;
-	padding-top: 1.6rem;
-	padding-bottom: 1.6rem;
-	text-align: center;
-}
-
-.section__titulo--destaque {
-	color: var(--clr-gold);
-}
-
-.diferencial__descricao {
-	color: black;
-}
-
-.diferenciais {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.diferencial + .diferencial {
-	margin-top: 1.6rem;
-}
-
-.diferencial__titulo {
-	font-size: 2.4rem;
-	font-weight: 400;
-	text-transform: uppercase;
-	display: flex;
-	align-items: center;
-}
-
-.diferencial__descricao {
-	width: 28.8rem;
-}
-
-.diferencial__titulo::before {
-	content: "";
-	background: var(--clr-gold);
-	color: var(--clr-white);
-	padding: 1rem;
-	margin-right: .8rem;
-	font-family: "Font Awesome 5 Free";
-	font-weight: 900;
-	font-size: 3.6;
-}
-
-.diferencial__titulo--carteira::before {
-	content: "\f555";
-}
-
-.diferencial__titulo--mapa::before {
-	content: "\f2b5";
-}
-
-.diferencial__titulo--meias::before {
-	content: "\f6e3";
-}
-
-@media screen and (min-width: 625px) {
-	.diferenciais {
-		justify-content: space-between;
-	}
-
-	.diferencial + .diferencial {
-		margin-top: 0;
-	}
-
-	.diferencial__descricao {
-		width: 100%;
-	}
-}
-/**********************************/
 /* 6. Pacotes 
 /**********************************/
 
 .titulo__projetos {
+    margin-top: 8rem;
 	position: relative;
 }
 
@@ -544,7 +352,55 @@ img {
 /* 7. Newsletter
 /**********************************/
 
+.newsletter-c {
+    padding: 4rem 0;
+}
 
+.newsletter-info__titulo {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.newsletter-info__descricao {
+    font-weight: 300;
+    font-size: 2.4rem;
+    font-style: italic;
+    line-height: 1.2;
+    margin: 1.6rem;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-form__input {
+    flex: 3 1 37rem;
+    font-size: 1.8rem;
+    height: 6rem;
+    color: black;
+    border: none;
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.newsletter-form__submit {
+    flex: 1;
+    font-size: 3.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: var(--clr-gold);
+    color: black;
+    cursor: pointer;
+    border: none;
+    letter-spacing: .2rem;
+    padding: 1.6rem;
+    transition: var(--transition);
+}
+
+.newsletter-form__submit:hover {
+    letter-spacing: .6rem;
+}
 
 /**********************************/
 /* 8. Galeria
@@ -614,7 +470,3 @@ img {
 		content: "";
 	}
 }
-/**********************************/
-/* 10. Modal
-/**********************************/
-
