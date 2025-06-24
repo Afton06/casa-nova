@@ -55,8 +55,11 @@ const _elements = {
 
 let _sliderCounter = 0, _touchStart, _touchEnd;
 
+_elements.date.innerHTML = new Date().getFullYear() + ".";
 _elements.scrollLinks.forEach(link => {
-
+	link.addEventListener("click", e => {
+		_elements.navbarList.classList.remove("navbar-list--show-links");
+	});
 });
 
 _elements.toggle.addEventListener("click", () => {
@@ -72,7 +75,7 @@ _elements.sliderThumbsImage.forEach(img => {
 });
 
 _elements.closeModalBtn.addEventListener("click", () => {
-
+	_elements.navbarList.classList.toggle("navbar-list--show-links");
 });
 
 _elements.sliderNextButton.addEventListener("click", () => nextImage());
